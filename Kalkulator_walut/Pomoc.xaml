@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Kalkulator_walut.Pomoc"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kalkulator_walut"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="424" Height="776">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,10,10" Text="Aplikacja przedstawia kalkulator walut, który pobiera aktualne kursy walut ze strony NBP. Użytkownik musi podać kwotę, a następnie wybrać walutę wyjściową (po lewej stronie) i walutę docelową (po prawej stronie). Program automatycznie wykonuje obliczenia i zaokrągla do dwóch miejsc po przecinku oraz podaje kwotę w wybranej walucie." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,560,0,0" Text="Program aktualnie zamienia" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock x:Name="tbWaluta" HorizontalAlignment="Left" Margin="10,600,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30"/>
+        <Button Content="Powrót" Margin="0,667,0,0" VerticalAlignment="Top" FontSize="30" HorizontalAlignment="Center" Click="btnPowrot_Click" Width="403" BorderBrush="White" BorderThickness="2"/>
+
+    </Grid>
+</Page>
